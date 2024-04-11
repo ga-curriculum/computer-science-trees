@@ -15,8 +15,6 @@ There are four components to this lesson. We recommend tackling them in the orde
 3. [Balancing a Binary Tree](./balancing-a-binary-tree/README.md)
 4. [Exercise: Implementing an AVL Tree](./exercise/README.md)
 
-> The myGA modules contain a link to an exercise in CodePen. **The code in CodePen is the exact same as the code in the in-class exercises.** Try out the exercise in CodePen and see how far you can get with it. Stop when you get stuck and we'll review the solution in class.
-
 ## Learning Objectives
 
 By the end of this lesson, you'll be able to:
@@ -43,7 +41,6 @@ By the end of this lesson, you'll be able to:
 
 ## Additional Resources
 
-- Since we don't cover how to build a trie, read about how it's implemented in code [here](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/trie).
 - Check out these beautiful visualizations: [a binary tree](https://www.cs.usfca.edu/~galles/visualization/BST.html), [a trie](https://www.cs.usfca.edu/~galles/visualization/Trie.html), and [an AVL tree](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html).
 - How to distinguish between [several types of tree data structures](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree).
 - Common [interview questions about binary trees](https://medium.com/@codingfreak/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f).
