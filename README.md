@@ -36,8 +36,8 @@ By the end of this lesson, you'll be able to:
 
 3 hours total:
 
-- 1 hour myGA
-- 2 hours in class
+- 1 hour lecture
+- 2 hours exercise
 
 ## Additional Resources
 
