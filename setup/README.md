@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - Setup](./assets/hero.png)
+# ![Computer Science - Binary Trees and Tries - Setup](./assets/hero.png)
 
 ## Setup
 

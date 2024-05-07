@@ -1,1 +1,1 @@
-# ![[tktk Module Name]](./assets/tktk-hero.png)
+# ![Computer Science - Binary Trees and Tries](./assets/hero.png)

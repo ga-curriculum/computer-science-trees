@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - Exercise](./assets/hero.png)
+# ![Computer Science - Binary Trees and Tries - Exercise](./assets/hero.png)
 
 ## Time to Practice
 
