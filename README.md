@@ -1,4 +1,4 @@
-# ![Computer Science - Binary Trees and Tries](./assets/hero.png)
+# ![Computer Science - Trees](./assets/hero.png)
 
 ## Overview
 
@@ -8,16 +8,14 @@ This lesson covers three similar, tree-based data structures:
 - Tries.
 - A self-balancing binary tree (aka, an AVL tree).
 
-There are four components to this lesson. We recommend tackling them in the order below:
+### Prerequisites
 
-1. [Binary Trees and Tries](./binary-trees-and-tries/README.md)
-2. [Exercise: Implementing a Binary Tree](./exercise/README.md)
-3. [Balancing a Binary Tree](./balancing-a-binary-tree/README.md)
-4. [Exercise: Implementing an AVL Tree](./exercise/README.md)
+- Big O Notation
+- Recursion
 
-## Learning Objectives
+### Learning Objectives
 
-By the end of this lesson, you'll be able to:
+By the end of this module, learners will be able to:
 
 - Describe how binary trees and tries are structured.
 - Determine whether breadth-first or depth-first traversal is a more efficient search method for a given situation.
@@ -27,22 +25,42 @@ By the end of this lesson, you'll be able to:
 - Explain how an AVL tree balances itself.
 - Balance a binary tree.
 
-## Prerequisites
+## Content
 
-- Big O notation
-- Recursion
+There are four components to this module. We recommend tackling them in the order below:
 
-## Duration
+1. Lesson: [Binary Trees and Tries](./binary-trees-and-tries/README.md)
+2. Exercise: [Implementing a Binary Tree](https://git.generalassemb.ly/modular-curriculum-all-courses/trees-starter-code)
+3. Lesson: [Balancing a Binary Tree](./balancing-a-binary-tree/README.md)
+4. Exercise: [Implementing an AVL Tree](https://git.generalassemb.ly/modular-curriculum-all-courses/trees-starter-code)
+
+## Solution Code
+
+- Exercise Solution: [Implementing a Binary Tree](./solution/binary-tree.md)
+- Exercise Solution: [Implementing an AVL Tree](./solution/avl-tree.md)
+
+### Time to Complete
 
 3 hours total:
 
-- 1 hour lecture
-- 2 hours exercise
+- 1 hour - Binary Trees and Tries and Balancing a Binary Tree Lessons
+- 2 hours - Implementing a Binary Tree and Implementing an AVL Tree Exercises
 
 ## Additional Resources
 
+- Since we don't cover how to build a trie, read about how it's implemented in code [here](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/trie).
 - Check out these beautiful visualizations: [a binary tree](https://www.cs.usfca.edu/~galles/visualization/BST.html), [a trie](https://www.cs.usfca.edu/~galles/visualization/Trie.html), and [an AVL tree](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html).
 - How to distinguish between [several types of tree data structures](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree).
 - Common [interview questions about binary trees](https://medium.com/@codingfreak/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f).
 - Tree balancing interview prep: [here](https://www.geeksforgeeks.org/convert-normal-bst-balanced-bst/) and [here](https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced).
 - [Whiteboarding an AVL tree](https://www.youtube.com/watch?v=rbg7Qf8GkQ4&).
+
+## Internal resources
+
+✏️ [Instructor Guide](./internal-resources/instructor-guide.md)
+
+🏗️ [Release Notes](./internal-resources/release-notes.md)
+
+---
+
+**Find a 👾 bug 👾 or have suggestions? [Let us know](https://git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/blob/main/module-feedback.md)!**

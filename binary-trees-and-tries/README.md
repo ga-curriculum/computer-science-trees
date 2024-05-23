@@ -1,6 +1,4 @@
-# ![Computer Science - Binary Trees and Tries - tktk Microlesson Name](./assets/hero.png)
-
-**Learning objective:** By the end of this lesson, students will be able to tktk.
+# ![Computer Science - Trees - Binary Trees and Tries](./assets/hero.png)
 
 We’ve already learned about linked lists, a basic way to store data in nodes. Binary trees and tries are more advanced node-based structures that store data hierarchically from top to bottom (in the shape of, you guessed it, an actual tree). But here’s where we get fancy: Nodes in a binary tree or trie can point to more than one node! Let’s explore how this works.
 
@@ -31,6 +29,16 @@ Trees are used in situations where data needs to be stored hierarchically, retri
 
 Let’s see how Drake has used a tree data structure to store data that relied on hierarchy and organization.
 
+## Trees in Action : Real World
+
+TKTK Video
+
+At my startup where I worked, it was a big thing that we wanted to classify industries. For example, if you’re aerospace and defense. Or are you plastic injection molding? Or are you manufacturing? Or something else? We had a bunch of industries. Some of them were hierarchical with subclasses of industries. A tree data structure is really good if that’s the kind of data that you want to structure. And if you want to find the parent class of a particular industry, what are all the child classes?
+
+Somebody who knew what they were doing — a dev, or someone with experience — built this thing out with a lot of helper functions and some other modules that we used to interface with this thing. A junior dev might reasonably be expected to manipulate it or change one of these functions that scans a tree for a particular node. Or, they need to understand how a piece of code is operating, because they’re consuming the result or they might get a subtree.
+
+You may not be solely in charge of working with one of these things, but you’ll probably have to read, understand, and maybe tweak some code.
+
 ## Binary Trees
 
 A binary tree is a species of tree with one defining feature: Each node has at most two branches.
@@ -45,6 +53,10 @@ The `left` and `right` properties can also be set to `null` if the node has no c
 
 As we add new nodes to the binary tree, we use this logic to find each new node’s proper place in the structure: **lesser** values go **left**; **greater** values go **right**. (Remember this hint: lesser = left!)
 
+<br>
+
+![Tree](./assets/binary-tree.png)
+
 ## Building a Binary Tree, Part 1
 
 Let’s take the binary tree we started on the last slide. We've added one node with the value `5` (in actual applications, this might represent an ID in a database or a string to be alphabetically sorted).
@@ -52,7 +64,7 @@ Let’s take the binary tree we started on the last slide. We've added one node 
 So far, our tree looks like this in code and in a diagram:
 
 ```js
-{   
+{
     root: {
         value: 5,
         left: null,
@@ -61,14 +73,16 @@ So far, our tree looks like this in code and in a diagram:
 }
 ```
 
-tktk - Hunter can you add a visual representation of a binary tree here? with a root node and a child node
+<br>
+
+![Tree](./assets/binary-tree.png)
 
 ## Building a Binary Tree, Part 2
 
 The process of adding a node checks the new node’s value against the existing nodes in the tree, starting with the root. So, if we add a node with value `3` to the tree below, it will go to the left of the root node, as `3` is less than `5`.
 
 ```js
-{   
+{
     root: {
         value: 5,
         left: {
@@ -81,7 +95,9 @@ The process of adding a node checks the new node’s value against the existing 
 }
 ```
 
-tktk - Hunter can you add a visual representation of a binary tree here? with a root node, a child node, and a grandchild node
+<br>
+
+![Tree and Nodes](./assets/binary-tree-2.png)
 
 ## Building a Binary Tree, Part 3
 
@@ -89,7 +105,9 @@ Then, if we want to add a node with value `7` to the tree, it would go to the ri
 
 The last node in a binary tree does not have any child nodes — it's a leaf! In this tree, both `3` and `7` would be leaf nodes, as they currently have no children.
 
-tktk - Hunter can you add a visual representation of a binary tree here? with a root node, two child nodes, and two grandchild nodes
+<br>
+
+![Tree and 2 Nodes](./assets/binary-tree-3.png)
 
 ## Traversing a Binary Tree
 
@@ -100,6 +118,8 @@ There are a couple of ways to accomplish this. You could do it iteratively with 
 You could do it that way, but that wouldn’t be elegant code. Traversing a binary tree means moving along multiple paths in the tree. And the best method for calculating multiple paths or possibilities? Recursion, of course!
 
 ## Breadth-First vs. Depth-First Search
+
+TKTK VIDEO
 
 There are two ways that you’ll end up traversing a binary tree — breadth-first or depth-first. They’re two different search operations that move through a tree in different ways.
 
@@ -113,18 +133,18 @@ Imagine you’re playing chess and planning your next move. Do you think of all 
 
 Everyone’s a winner when it comes to search methods — there’s not one that’s better than another. The search method you choose depends on the size and shape of your tree as well as the type of data you’re looking for:
 
-|  Situation  | Breadth-first is better... | Depth-first is better... |
-|:-----------:|:--------------------------:|:------------------------:|
-| Value closer to the top | ✓ |  |
-| Value closer to the bottom |  | ✓ |
-| Very deep tree |  | ✓ |
-| Very wide tree | ✓ |  |
-| Memory isn't a concern | ✓ |  |
-| Efficient memory usage |  | ✓ |
-| Finding shortest path from root | ✓ |  |
-| Understanding dependencies |  | ✓ |
-| Using iteration only | ✓ |  |
-| Using recursion |  | ✓ |
+|            Situation            | Breadth-first is better... | Depth-first is better... |
+| :-----------------------------: | :------------------------: | :----------------------: |
+|     Value closer to the top     |             ✓              |                          |
+|   Value closer to the bottom    |                            |            ✓             |
+|         Very deep tree          |                            |            ✓             |
+|         Very wide tree          |             ✓              |                          |
+|     Memory isn't a concern      |             ✓              |                          |
+|     Efficient memory usage      |                            |            ✓             |
+| Finding shortest path from root |             ✓              |                          |
+|   Understanding dependencies    |                            |            ✓             |
+|      Using iteration only       |             ✓              |                          |
+|         Using recursion         |                            |            ✓             |
 
 ## Tries
 
@@ -137,7 +157,13 @@ Like a tree, a trie starts with an empty root node that points to child nodes. E
 
 The other thing that makes tries unique? They almost always store alphabetical data. The value stored in a node is a single letter, and the references are pointers to other letters that make up a word.
 
+<br>
+
+![Tries](./assets/10-Root-Children-Diagram.png)
+
 ## Building a Trie
+
+TKTK VIDEO
 
 Let’s say that we built a trie for the phrase, “Peter Piper picked a peck of pickled peppers.”
 
@@ -151,13 +177,19 @@ What if we were looking for the word “pick” in the trie below? It’s there,
 
 `isWord` tells the trie which paths create valid words. We’d add the property to the “K” but not the “C” before it, as that’s not a valid English word.
 
+<br>
+
+![Root Node](./assets/root-node.png)
+
 ## Tries in Action
 
 Tries have some pretty cool applications. If you’ve ever started typing a search query into Google (or another search engine), you’ve probably seen it attempt to autocomplete what you’re looking for. That’s a trie in action!
 
 Because you now know how tries work, you can probably imagine how each letter we type into a search box would retrieve a subset of a much larger trie.
 
-tktk Hunter - there is an image here of a dropdown google search bar can we add that or something similar?
+<br>
+
+![Spaghetti Search](./assets/spaghetti-search.png)
 
 Tries don’t often function on their own. They’re usually used in conjunction with another data structure or some type of search algorithm. But the trie structure is what lays the groundwork from which strings of letters can be pulled.
 
@@ -171,3 +203,22 @@ Practice building a binary tree or trie with this visualization:
 
 - [Binary tree](https://www.cs.usfca.edu/~galles/visualization/BST.html)
 - [Trie](https://www.cs.usfca.edu/~galles/visualization/Trie.html)
+
+<br>
+
+![Brain](./assets/interviews.png)
+
+## Recap
+
+Let’s recap on binary trees and tries.
+
+Trees are an important hierarchical data structure. They’re made up of nodes, where data is stored, and edges, which represent the connections between the data.
+
+- A binary tree is a tree with one unique feature: Any node can only have two branches (connections to other nodes). Nodes in a binary tree have a left property that points to a lesser value or a right property that points to a greater value.
+- A trie is a type of tree that can only store alphabetical data. Each node stores a letter value and points forward to other nodes that make up words.
+
+Now that you understand binary trees, you can understand memes like this one. Lucky you!
+
+<br>
+
+![Trees Meme](./assets/pants-meme.jpg)
