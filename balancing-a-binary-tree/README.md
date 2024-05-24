@@ -10,7 +10,7 @@ At this point, our super-efficient binary tree is basically just a giant linked 
 
 <br>
 
-![Unbalanced Tree](./assets/3-unbalanced.png)
+<img src="./assets/3-unbalanced.png" alt="Unbalanced Tree" height="600">
 
 ## Much Better
 
@@ -20,7 +20,15 @@ Notice how this tree became balanced. Instead of having the value `5` as the top
 
 <br>
 
-![Balanced Tree](./assets/4-6-balanced.png)
+<img src="./assets/4-6-balanced.png" alt="Balanced Tree" height="600">
+
+## Finding the Balance
+
+Rotating might sound great, but it’s not as simple and straightforward as it seems.
+
+Depending on the size of the unbalanced tree, the amount of rotations required to fix it might become expensive to process. Additionally, you have to start by checking if a tree is balanced or not, which can be an expensive operation in itself.
+
+While there are algorithms that can balance a binary tree in `O(N)` time (not too shabby), what if we told you that you could avoid the problem altogether with a binary tree that could balance itself? What a dream!
 
 ## The Self-Balancing Tree
 
@@ -35,7 +43,63 @@ In our balanced binary tree below, the left side has a height of `1`, while the 
 
 <br>
 
-![Balanced Tree](./assets/4-6-balanced.png)
+<img src="./assets/4-6-balanced.png" alt="Balanced Tree" height="600">
+
+### Knowledge Check
+
+Review the following code to determine if it’s a **balanced** or **unbalanced** binary tree. (Hint: You might want to draw the tree by hand to visualize its height.)
+
+```json
+{
+  "value": 4,
+  "left": {
+    "value": 1,
+    "left": {
+      "value": -2,
+      "left": null,
+      "right": {
+        "value": 3,
+        "left": null,
+        "right": null
+      }
+    },
+    "right": null
+  },
+  "right": {
+    "value": 5,
+    "left": {
+      "value": 1,
+      "left": null,
+      "right": null
+    },
+    "right": {
+      "value": 7,
+      "left": {
+        "value": -2,
+        "left": null,
+        "right": null
+      },
+      "right": {
+        "value": 8,
+        "left": null,
+        "right": null
+      }
+    }
+  }
+}
+```
+
+<details>
+<summary>
+Click for answer
+</summary>
+<br>
+Balanced
+
+It’s balanced! You can see that the difference in heights between the two subtrees is never greater than 1.
+
+</details>
+<br>
 
 ## Finding the Height
 
@@ -44,6 +108,62 @@ Knowing the height of an AVL tree is important — this is what allows the tree 
 In many implementations of an AVL tree, the height of a given node is stored as a property within the node itself, just like it stores `left` and `right` properties that point to its child nodes.
 
 The height of a given node is the **longest possible path forward** in the tree before reaching a leaf node (the end of the tree). You can use the `setHeight` method to do this work for you!
+
+### Knowledge Check
+
+Let’s return to this **balanced binary tree**. What is the height of the right side? (Again, you might want to return to your sketch to count it.)
+
+```json
+{
+  "value": 4,
+  "left": {
+    "value": 1,
+    "left": {
+      "value": -2,
+      "left": null,
+      "right": {
+        "value": 3,
+        "left": null,
+        "right": null
+      }
+    },
+    "right": null
+  },
+  "right": {
+    "value": 5,
+    "left": {
+      "value": 1,
+      "left": null,
+      "right": null
+    },
+    "right": {
+      "value": 7,
+      "left": {
+        "value": -2,
+        "left": null,
+        "right": null
+      },
+      "right": {
+        "value": 8,
+        "left": null,
+        "right": null
+      }
+    }
+  }
+}
+```
+
+<details>
+<summary>
+Click for answer
+</summary>
+<br>
+3
+
+We find the height of the entire tree by starting at the top and counting down (excluding the top node). So in this tree, the total height of the right branch is 3.
+
+</details>
+<br>
 
 ## How an AVL Tree Balances Itself
 
@@ -66,7 +186,7 @@ These can all be resolved with rotation, but they involve different steps.
 
 <br>
 
-![Left Left](./assets/11-1-left-left.png)
+<img src="./assets/11-1-left-left.png" alt="Left-Left Imbalance" height="600">
 
 ### Right-Right Imbalance
 
@@ -74,7 +194,7 @@ These can all be resolved with rotation, but they involve different steps.
 
 <br>
 
-![Right Right](./assets/11-3-right-right.png)
+<img src="./assets/11-3-right-right.png" alt="Right-Right Imbalance" height="600">
 
 ### Left-Right Imbalance
 
@@ -83,7 +203,7 @@ These can all be resolved with rotation, but they involve different steps.
 
 <br>
 
-![Left Right](./assets/11-2-left-right.png)
+<img src="./assets/11-2-left-right.png" alt="Left-Right Imbalance" height="600">
 
 ### Right-Left Imbalance
 
@@ -92,7 +212,7 @@ These can all be resolved with rotation, but they involve different steps.
 
 <br>
 
-![Right Left](./assets/11-4-right-left.png)
+<img src="./assets/11-4-right-left.png" alt="Right-Left Imbalance" height="600">
 
 ## Visualize It
 
