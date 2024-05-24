@@ -59,7 +59,7 @@ As we add new nodes to the binary tree, we use this logic to find each new node�
 
 <br>
 
-<img src="./assets/binary-tree.png" alt="Tree" style="max-height: 600px;">
+<img src="./assets/binary-tree.png" alt="Tree" height="600">
 
 ## Building a Binary Tree, Part 1
 
@@ -79,7 +79,7 @@ So far, our tree looks like this in code and in a diagram:
 
 <br>
 
-<img src="./assets/binary-tree.png" alt="Tree" style="max-height: 600px;">
+<img src="./assets/binary-tree.png" alt="Tree" height="600">
 
 ## Building a Binary Tree, Part 2
 
@@ -101,7 +101,7 @@ The process of adding a node checks the new node’s value against the existing 
 
 <br>
 
-<img src="./assets/binary-tree-2.png" alt="Tree and Nodes" style="max-height: 600px;">
+<img src="./assets/binary-tree-2.png" alt="Tree and Nodes" height="600">
 
 ## Building a Binary Tree, Part 3
 
@@ -111,13 +111,13 @@ The last node in a binary tree does not have any child nodes — it's a leaf! In
 
 <br>
 
-<img src="./assets/binary-tree-3.png" alt="Tree and 2 Nodes" style="max-height: 600px;">
+<img src="./assets/binary-tree-3.png" alt="Tree and 2 Nodes" height="600">
 
 ### Knowledge Check
 
 Let’s say that you wanted to add the value 9 to this binary tree. Where would it end up?
 
-<img src="./assets/binary-tree-3.png" alt="Tree and 2 Nodes" style="max-height: 600px;">
+<img src="./assets/binary-tree-3.png" alt="Tree and 2 Nodes" height="600">
 
 1. We'd add another point from `5`.
 2. We'd add it to the right of `3`.
@@ -201,7 +201,7 @@ Everyone’s a winner when it comes to search methods — there’s not one that
 
 Imagine that you’re searching your family tree for a certain family member. If you’re looking for someone who’s currently alive, would breadth- or depth-first search be the better option?
 
-<img src="./assets/family-tree.png" alt="Tree" style="max-height: 600px;">
+<img src="./assets/family-tree.png" alt="Tree" height="600">
 
 <br>
 
@@ -234,7 +234,7 @@ The other thing that makes tries unique? They almost always store alphabetical d
 
 <br>
 
-<img src="./assets/10-Root-Children-Diagram.png" alt="Tries" style="max-height: 600px;">
+<img src="./assets/10-Root-Children-Diagram.png" alt="Tries" height="600">
 
 ## Building a Trie
 
@@ -258,7 +258,7 @@ What if we were looking for the word “pick” in the trie below? It’s there,
 
 <br>
 
-<img src="./assets/root-node.png" alt="Root Node" style="max-height: 600px;">
+<img src="./assets/root-node.png" alt="Root Node" height="600">
 
 ## Tries in Action
 
@@ -268,7 +268,7 @@ Because you now know how tries work, you can probably imagine how each letter we
 
 <br>
 
-<img src="./assets/spaghetti-search.png" alt="Spaghetti Search" style="max-height: 600px;">
+<img src="./assets/spaghetti-search.png" alt="Spaghetti Search" height="600">
 
 Tries don’t often function on their own. They’re usually used in conjunction with another data structure or some type of search algorithm. But the trie structure is what lays the groundwork from which strings of letters can be pulled.
 
@@ -285,7 +285,7 @@ Practice building a binary tree or trie with this visualization:
 
 <br>
 
-<img src="./assets/interviews.png" alt="Brain" style="max-height: 600px;">
+<img src="./assets/interviews.png" alt="Brain" height="600">
 
 ## Recap
 
