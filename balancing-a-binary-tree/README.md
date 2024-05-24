@@ -186,7 +186,7 @@ These can all be resolved with rotation, but they involve different steps.
 
 <br>
 
-<img src="./assets/11-1-left-left.png" alt="Left-Left Imbalance" height="600">
+<img src="./assets/11-1-left-left.png" alt="Left-Left Imbalance" height="300">
 
 ### Right-Right Imbalance
 
@@ -194,7 +194,7 @@ These can all be resolved with rotation, but they involve different steps.
 
 <br>
 
-<img src="./assets/11-3-right-right.png" alt="Right-Right Imbalance" height="600">
+<img src="./assets/11-3-right-right.png" alt="Right-Right Imbalance" height="300">
 
 ### Left-Right Imbalance
 
@@ -203,7 +203,7 @@ These can all be resolved with rotation, but they involve different steps.
 
 <br>
 
-<img src="./assets/11-2-left-right.png" alt="Left-Right Imbalance" height="600">
+<img src="./assets/11-2-left-right.png" alt="Left-Right Imbalance" height="300">
 
 ### Right-Left Imbalance
 
@@ -212,7 +212,7 @@ These can all be resolved with rotation, but they involve different steps.
 
 <br>
 
-<img src="./assets/11-4-right-left.png" alt="Right-Left Imbalance" height="600">
+<img src="./assets/11-4-right-left.png" alt="Right-Left Imbalance" height="300">
 
 ## Visualize It
 
