@@ -285,7 +285,7 @@ Practice building a binary tree or trie with this visualization:
 
 <br>
 
-<img src="./assets/interviews.png" alt="Brain" height="600">
+<img src="./assets/interviews.png" alt="Brain">
 
 ## Recap
 
