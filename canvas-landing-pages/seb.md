@@ -30,9 +30,9 @@ By the end of this module, learners will be able to:
 There are four components to this module. We recommend tackling them in the order below:
 
 1. Lesson: [Binary Trees and Tries](../binary-trees-and-tries/README.md)
-2. Exercise: [Implementing a Binary Tree](https://git.generalassemb.ly/modular-curriculum-all-courses/trees-starter-code)
+2. Exercise: [Implementing a Binary Tree](https://github.com/ga-curriculum/trees-starter-code)
 3. Lesson: [Balancing a Binary Tree](../balancing-a-binary-tree/README.md)
-4. Exercise: [Implementing an AVL Tree](https://git.generalassemb.ly/modular-curriculum-all-courses/trees-starter-code)
+4. Exercise: [Implementing an AVL Tree](https://github.com/ga-curriculum/trees-starter-code)
 
 ## Solution Code
 
